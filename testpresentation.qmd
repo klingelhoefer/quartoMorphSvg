@@ -1,0 +1,27 @@
+---
+format: revealjs
+---
+
+```{r}
+devtools::install_github("klingelhoefer/quartoMorphSvg")
+```
+
+
+##
+`r morph_svg("images/tidyverse/1.svg", "images/tidyverse/2.svg", "images/tidyverse/3.svg", "images/tidyverse/2.svg", "images/tidyverse/1.svg", height = "16em")`
+
+
+##
+`r morph_svg(folder = "images/monstera/", animation_duration = .75)`
+
+
+##
+`r morph_svg("images/moderation/Slide1.svg", "images/moderation/Slide2.svg")`
+
+##
+```{r}
+morph_svg(folder = "images/mediation", height = "12em", animation_duration = .5, animation_curve = "cubic-bezier(0.76, 0, 0.24, 1)")
+
+```
+
+
