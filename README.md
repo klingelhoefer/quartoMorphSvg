@@ -1,6 +1,6 @@
 # Animate vector graphics for html-output generated with Quarto or R-Markdown with one line of code to achieve simple and easy morph-like transitions
 
-## A quick and low-effort workflow for powerpoint-like morph effects without any manual coding.
+## A quick and low-effort workflow for powerpoint-like morph effects without any manual coding and without dependencies.
 
 - Works by directly outputting the html code at the required position (e.g. in a quarto presentation, a quarto website, a bookdown document, etc.)
 - Automatically integrates into the quarto slide animation/fragment order
