@@ -1,6 +1,6 @@
 #' Quarto SVG Morph
 #'
-#' @description This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or filenames as inputs.
+#' @description This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or file names as inputs.
 #'
 #' @param ... Filenames: Add two or more filenames incl. paths. Can also be a vector with filenames.
 #' @param folder Alternative to using single filename location of two or more svg files
@@ -10,10 +10,8 @@
 #' @param animation_curve HTML animation curve. Can be "linear", "ease", "ease-in", "ease-out", "ease-in-out", or any cubic-bezier function. Defaults to: cubic-bezier(0.76, 0, 0.24, 1)
 #' @param click Makes animation clickable, e.g. for bookdown documents, websites, etc. Defaults to TRUE. In Quarto presentations clickability it follows the reveal structure and click can be turned off if undesirable by setting to FALSE.
 #' @param new_ids Removes existing ids. Not recommended.
-#'
 #' @return HTML-Text to output the animation
 #' @export
-#'
 #' @examples
 #' morph_svg(folder = "images/plant")
 

@@ -28,7 +28,7 @@ morph_svg(
 
 \item{animation_curve}{HTML animation curve. Can be "linear", "ease", "ease-in", "ease-out", "ease-in-out", or any cubic-bezier function. Defaults to: cubic-bezier(0.76, 0, 0.24, 1)}
 
-\item{click}{Makes animation clickable, e.g. for bookdown documents, websites, etc. Defaults to TRUE. In quarto Presentations clickability can be turned off by setting to FALSE.}
+\item{click}{Makes animation clickable, e.g. for bookdown documents, websites, etc. Defaults to TRUE. In Quarto presentations clickability it follows the reveal structure and click can be turned off if undesirable by setting to FALSE.}
 
 \item{new_ids}{Removes existing ids. Not recommended.}
 }
@@ -36,7 +36,7 @@ morph_svg(
 HTML-Text to output the animation
 }
 \description{
-This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or filenames as inputs.
+This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or file names as inputs.
 }
 \examples{
 morph_svg(folder = "images/plant")
