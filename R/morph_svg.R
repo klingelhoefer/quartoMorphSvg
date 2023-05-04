@@ -2,15 +2,15 @@
 #'
 #' @description This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or file names as inputs.
 #'
-#' @param ... Filenames: Add two or more filenames incl. paths. Can also be a vector with filenames.
-#' @param folder Alternative to using single filename location of two or more svg files
-#' @param height Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels, can be any css size attribute.
-#' @param img_id Optional internal id.
-#' @param animation_duration Optional duration of animation in seconds. Defaults to .2s.
-#' @param animation_curve HTML animation curve. Can be "linear", "ease", "ease-in", "ease-out", "ease-in-out", or any cubic-bezier function. Defaults to: cubic-bezier(0.76, 0, 0.24, 1)
-#' @param click Makes animation clickable, e.g. for bookdown documents, websites, etc. Defaults to TRUE. In Quarto presentations clickability it follows the reveal structure and click can be turned off if undesirable by setting to FALSE.
+#' @param ... Filenames: Add two or more file names incl. paths. Can also be a vector with filenames. The function must be called with the path to at least 2 .svg files or a folder (see next parameter).
+#' @param folder Alternative to using several file names. .svg images will be loaded in alphabetic order from the folder.
+#' @param height Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels, can be any css size attribute, e.g. "12em", "5px".
+#' @param img_id Optional internal id, defaults to time stamp.
+#' @param animation_duration Optional duration of animation in seconds. Defaults to 0.2.
+#' @param animation_curve HTML animation curve. Can be "linear", "ease", "ease-in", "ease-out", "ease-in-out", or any cubic-bezier function. Defaults to: "cubic-bezier(0.76, 0, 0.24, 1)".
+#' @param click Whether animation is clickable, e.g. for bookdown documents, websites, etc. Defaults to TRUE. In Quarto presentations animations follow the reveal structure and click can be turned off if undesirable by setting to FALSE.
 #' @param new_ids Removes existing ids. Not recommended.
-#' @return HTML-Text to output the animation
+#' @return Returns the animated SVG as HTML-Code at the location where the function is called.
 #' @export
 #' @examples
 #' morph_svg(
