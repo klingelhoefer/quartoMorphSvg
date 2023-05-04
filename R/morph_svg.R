@@ -4,7 +4,7 @@
 #'
 #' @param ... Filenames: Add two or more filenames incl. paths. Can also be a vector with filenames.
 #' @param folder Alternative to using single filename location of two or more svg files
-#' @param height Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels. Can also be percentage, e.g., "50%", or other css expression, e.g. "12em"
+#' @param height Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels, can be any css size attribute.
 #' @param img_id Optional internal id.
 #' @param animation_duration Optional duration of animation in seconds. Defaults to .2s.
 #' @param animation_curve HTML animation curve. Can be "linear", "ease", "ease-in", "ease-out", "ease-in-out", or any cubic-bezier function. Defaults to: cubic-bezier(0.76, 0, 0.24, 1)
@@ -13,7 +13,10 @@
 #' @return HTML-Text to output the animation
 #' @export
 #' @examples
-#' morph_svg(folder = "images/plant")
+#' morph_svg(
+#'   "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide1.svg",
+#'   "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide2.svg"
+#'   )
 
 morph_svg = function(
     ..., # svg paths  as strings, can be a strings or a vector (order matters)
