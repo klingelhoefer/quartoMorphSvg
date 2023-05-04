@@ -20,7 +20,7 @@ morph_svg(
 
 \item{folder}{Alternative to using single filename location of two or more svg files}
 
-\item{height}{Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels. Can also be percentage, e.g., "50%", or other css expression, e.g. "12em"}
+\item{height}{Height of the SVG file. Defaults to "auto" which should correspond to the height the svg document is saved in. Default is pixels, can be any css size attribute.}
 
 \item{img_id}{Optional internal id.}
 
@@ -39,5 +39,8 @@ HTML-Text to output the animation
 This function creates animations from two or more SVG files to display in Quarto or other R-generated HTML-Documents. It takes folder names or file names as inputs.
 }
 \examples{
-morph_svg(folder = "images/plant")
+morph_svg(
+  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide1.svg",
+  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide2.svg"
+  )
 }

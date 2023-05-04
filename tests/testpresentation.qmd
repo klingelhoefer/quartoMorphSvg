@@ -1,0 +1,94 @@
+---
+format: revealjs
+embed-resources: true
+---
+
+# Example Presentation
+
+**How to use `quartoMorphSvg`**
+
+Installing package:
+
+```{r}
+#| echo: true
+#| output: false
+if(!"quartoMorphSvg" %in% rownames(installed.packages())){
+  devtools::install_github("klingelhoefer/quartoMorphSvg")
+}
+library(quartoMorphSvg)
+```
+
+To display an animated image, you can simply write inline (replace with your path(s):
+
+```{r}
+#| eval: false
+#| echo: true
+`r morph_svg("path/to/img_1.svg", "path/to/img_1.svg")` 
+```
+
+Or use {r} codechunks:
+```{r}
+#| eval: false
+#| echo: true
+morph_svg("path/to/img_1.svg", "path/to/img_1.svg")
+```
+
+
+## Moderation Example
+
+`r morph_svg("images/moderation/Slide1.svg", "images/moderation/Slide2.svg", height = "400px")`
+
+To generate the image above:
+
+```{r}
+#| eval: false
+#| echo: true
+`r morph_svg(folder = "images/moderation")`
+```
+
+## Mediation Example
+
+```{r}
+#| echo: true
+morph_svg(folder = "images/mediation", animation_duration  = 1)
+```
+
+## Tidyverse Logo Example
+
+::: columns
+::: {.column width="60%"}
+Any order can be specified/repeated an arbitrary amount of times, e.g.,
+
+```{r}
+#| eval: false
+#| echo: true
+`r morph_svg("images/tidyverse/1.svg", "images/tidyverse/2.svg", "images/tidyverse/3.svg", "images/tidyverse/2.svg", "images/tidyverse/1.svg", height = "500px")`
+```
+
+Note that complex images may take a while to render
+:::
+
+::: {.column width="40%"}
+`r morph_svg("images/tidyverse/1.svg", "images/tidyverse/2.svg", "images/tidyverse/3.svg", "images/tidyverse/2.svg", "images/tidyverse/1.svg", height = "500px", animation_duration = .75)`
+:::
+:::
+
+## Monstera Example
+
+::: columns
+::: {.column width="35%"}
+The generated output can be used in any other HTML document, and even standalone. In non-quarto documents it will only react to clicking, thus, `click` should be `TRUE` (the default).
+:::
+::: {.column width="65%"}
+`r morph_svg(folder = "images/monstera/", animation_duration = 1.25, click = F, height = "12em")`
+```{r}
+#| eval: false
+#| echo: true
+`r morph_svg(folder = "images/monstera/", animation_duration = 1.25, click = F, height = "14em")`
+```
+:::
+:::
+
+
+
+

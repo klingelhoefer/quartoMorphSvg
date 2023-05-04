@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1280"
+   height="720"
+   overflow="hidden"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="Slide1.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1888233"
+     inkscape:cx="677.56076"
+     inkscape:cy="309.97038"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="1192"
+     inkscape:window-y="1354"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g27" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="clip0">
+      <rect
+         x="0"
+         y="0"
+         width="1280"
+         height="720"
+         id="rect2" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#clip0)"
+     id="g27">
+    <path
+       d="M7.67371e-07-4 527.254-3.9999 527.254 4.0001-7.67371e-07 4ZM523.255-11.9999 547.255 0.000104987 523.255 12.0001Z"
+       transform="matrix(1 0 0 -1 366 498)"
+       id="path9" />
+    <path
+       d="m -17.39746,-43.03756 12.788903,13.249122 -5.205,6.076 -12.788983,-13.250002 z m 14.955903,4.572122 10.418,24.728 -26.033,-6.503 z"
+       id="path11"
+       transform="matrix(1,0,0,-1,215,412.441)"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       d="m 722.9449,-174.29085 18.70414,11.13602 -5.2,6.075 -18.71014,-11.13502 z m 20.87414,2.45902 10.42,24.728 -26.04,-6.503 z"
+       id="path13"
+       sodipodi:nodetypes="ccccccccc" />
+    <rect
+       x="489"
+       y="-247"
+       width="302"
+       height="170"
+       fill="#4472c4"
+       id="rect15" />
+    <text
+       fill="#ffffff"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="88px"
+       id="text17"
+       x="602.41699"
+       y="-133">M</text>
+    <rect
+       x="64"
+       y="413"
+       width="302"
+       height="170"
+       fill="#4472C4"
+       id="rect19" />
+    <text
+       fill="#FFFFFF"
+       font-family="Calibri,Calibri_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="88"
+       transform="translate(192.217 527)"
+       id="text21">X</text>
+    <rect
+       x="914"
+       y="413"
+       width="302"
+       height="170"
+       fill="#4472C4"
+       id="rect23" />
+    <text
+       fill="#FFFFFF"
+       font-family="Calibri,Calibri_MSFontService,sans-serif"
+       font-weight="400"
+       font-size="88"
+       transform="translate(1043.53 527)"
+       id="text25">Y</text>
+  </g>
+</svg>
