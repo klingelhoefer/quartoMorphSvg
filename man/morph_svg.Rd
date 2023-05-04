@@ -40,7 +40,7 @@ This function creates animations from two or more SVG files to display in Quarto
 }
 \examples{
 morph_svg(
-  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide1.svg",
-  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/images/mediation/Slide2.svg"
+  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/tests/images/mediation/Slide1.svg",
+  "https://raw.githubusercontent.com/klingelhoefer/quartoMorphSvg/master/tests/images/mediation/Slide2.svg"
   )
 }
