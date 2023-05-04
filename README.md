@@ -9,6 +9,7 @@
 ## Workflow 
 
 Installing: Run `devtools::install_github("klingelhoefer/quartoMorphSvg")`
+Activating Package: `library(quartoMorphSvg)`
 
 ### From Powerpoint
 1. Save a slide that includes shapes, text, paths, etc. as svg with powerpoint
