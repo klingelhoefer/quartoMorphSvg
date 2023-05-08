@@ -4,7 +4,7 @@
 
 - Works by directly outputting the html code at the required position (e.g. in a quarto presentation, a quarto website, a bookdown document, etc.)
 - Automatically integrates into the quarto slide animation/fragment order
-- IMPORTANT: If a svg file does not have IDs (see below), I have included a simple algorithm that tries to match elements based on common attributes across frames. This does not work well and may break your intended animations if different elements are more similar to each other across frames.
+- IMPORTANT: If svg elements do not have IDs (see below), I have included a simple algorithm that tries to match elements based on common attributes across frames. This does not work well and may break your intended animations if different elements are more similar to each other across frames. You can give every element an ID by saving an image with a vector program like inkscape (free & open source) - see workflow below.
 
 ## Workflow 
 
