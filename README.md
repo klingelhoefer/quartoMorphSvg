@@ -15,12 +15,12 @@ Activating Package: `library(quartoMorphSvg)`
 1. Save a slide that includes shapes, text, paths, etc. as svg with powerpoint
 1. Copy the slide in powerpoint and make the desired changes, then save all slides as svg. Do not move objects outside of the slide boundaries, as they will not be saved into the SVG file.
 3. Alternatively if 1-2 lead to unexpected outcomes: Open initial slide in a vector graphics program like inkscape, save the file as svg to add IDs, copy the file and make the desired changes
-4. Put the following R-code where you want the image to load and input/paste the path to the folder PowerPoint generates: `` `r morph_svg(folder = "images/monstera/")` ``. Note that you need to change the path to your local relative/absolute path
+4. Put the following R-code where you want the image to load and input/paste the path to the folder PowerPoint generates: `` `r morph_svg(folder = "images/monstera/")` ``. Note that you need to change the path to your local relative/absolute path. Alternatively, you can call the function from a codechunk and hide the code output (`morph_svg(...)`). 
 
 ### From any vector graphic (e.g. created with inkscape)
 1. Save the vector graphic to create IDs
 2. Copy the initial file and make desired changes in the copy
-3. Put the following R-code with the path to the image(s) or folder where you want the image to load, e.g.: `` `r morph_svg("images/moderation/Slide1.svg", "images/moderation/Slide2.svg")` ``
+3. Put the following inline-R-code with the path to the image(s) or folder where you want the image to load, e.g.: `` `r morph_svg("images/moderation/Slide1.svg", "images/moderation/Slide2.svg")` ``. Alternatively, you can call the function from a codechunk and hide the code output (`morph_svg(...)`). 
 
 ## Limitations & Troubleshooting
   - Works best for documents in which every element has an id. 
