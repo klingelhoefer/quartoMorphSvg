@@ -36,7 +36,7 @@ Activating Package: `library(quartoMorphSvg)`
     - *Troubleshooting*: 
       1. Have all objects and matching ids in all images and make them transparent or move them out of frame as needed
 
-[^1]: Alternatively, you can call the function from a codechunk and hide the code output (`morph_svg(...)`). 
+[^1]: Alternatively, you can call the function (`morph_svg(...)`) from a codechunk and hide the code output (`#| echo: false`). 
 
 
 
