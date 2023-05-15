@@ -436,20 +436,24 @@ morph_svg = function(
         id_match_df[r_i, "match_row_tx"] = as.numeric(id_match)
       }
 
-      for(j in id_match_df[!is.na(id_match_df$match_row_tx), "match_row_tx"]){
-        attr[[s_i]][j,"match_id"] =
-          diff$match_id[id_match_df$match_row_tx[which(id_match_df$match_row_tx == j)]][1] #only selecting first match
+      for(j in 1:length(id_match_df[!is.na(id_match_df$match_row_tx), "match_row_tx"])){
+        attr[[s_i]][j,"match_id"] =  attr[[1]][which(id_match_df$match_row_tx == j),"match_id"][1] #only selecting first match
       }
 
       # getting only relevant columns
       df_y = attr[[s_i]][!is.na(attr[[s_i]]["match_id"]),]
 
+
+      # selecting only non-duplicates
+      df_y = df_y[!duplicated(df_y$match_id), ]
+
+
       diff = merge(x = diff, y = df_y, by = "match_id", all.x = T)
-      duplicated(df_y)
       diff = diff[order(diff$order___t1),] # ordering
       rownames(diff) = diff$order___t1
     }
   }
+
 
   diff["data_id"] = diff["match_id"]
 
@@ -637,6 +641,8 @@ morph_svg = function(
         r
       }
     )
+
+
     # getting attribute name
     attr_c_i_n = sapply(
       attr_c_i_a,
@@ -661,6 +667,10 @@ morph_svg = function(
     # adding to global collection variable
     if(i_a == 1){attr_c = attr_c_i}
     if(i_a > 1){attr_c = c(attr_c, attr_c_i)}
+
+    # adding cx and cy attributes
+    attr_c = unique(c(attr_c, "cx", "cy"))
+
 
     # looping through attributes of svg elements
     for(a in attr_c){

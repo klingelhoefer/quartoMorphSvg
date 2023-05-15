@@ -1,9 +1,9 @@
 Package: quartoMorphSvg
 Type: Package
 Title: Animate SVG images for HTML-Output Generated with Quarto or R-Markdown with One Line of Code to Achieve Simple and Easy Morph-Like Transitions
-Version: 0.2.2
+Version: 0.2.3
 Author: Julius Klingelhoefer
-Maintainer: The package maintainer <julius.klingelhoefer@fau.de>
+Maintainer: Julius Klingelhoefer <julius.klingelhoefer@fau.de>
 Description: A quick and low-effort workflow for powerpoint-like morph effects without any manual coding and without dependencies.
 License: CC0
 Encoding: UTF-8
