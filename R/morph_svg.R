@@ -174,6 +174,11 @@ morph_svg = function(
     # making ids unique for svg text
     t$end = gsub("id\\s*=\\s*'", paste0("id='", img_id, "_"), t$end)
 
+    # replacing internal urls
+    t$end = gsub("url\\(#+([a-zA-Z0-9_-]+)\\)", paste0("url(#",img_id, "_", "\\1)"), t$end)
+
+    # removing inkscape font specifications (causes issues due to "'"); not interpreted by browsers
+    t$end = gsub("-inkscape-font-specification:'([^']+)'", "", t$end)
 
     # setting NA ids to placeholder
     t$data_id[is.na(t$data_id)] =
